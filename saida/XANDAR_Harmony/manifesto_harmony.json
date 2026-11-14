@@ -1,0 +1,128 @@
+{
+  "created_utc": "2026-11-14T20:31:40.714800+00:00",
+  "collection": "NISAR_L2_GCOV_PROVISIONAL_V1",
+  "collection_id": "C2854338529-ASF",
+  "bbox_wgs84": [
+    85.4772,
+    28.2437,
+    85.5792,
+    28.3337
+  ],
+  "scenes": {
+    "2026-08-19": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_X05026_N_F_J_001",
+    "2026-08-31": "NISAR_L2_PR_GCOV_029_098_A_016_4005_DHDH_A_20260831T233918_20260831T233952_X05026_N_F_J_001"
+  },
+  "aoi_note": "Retângulo proposto ~10 × 10 km ao redor da origem; não é a delimitação do desastre.",
+  "jobs": {
+    "998997b61f16d5fdeea0": {
+      "id": "367e3565-2915-4e1f-bc43-ddbc0360c183",
+      "date_utc": "2026-08-19",
+      "scene": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_X05026_N_F_J_001",
+      "layers": [
+        "HHHH"
+      ],
+      "submitted_utc": "2026-11-14T20:39:13.660910+00:00",
+      "status": "successful",
+      "outputs": [
+        "2026-08-19/998997b61f16d5fdeea0/465033752_NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_X05026_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif"
+      ],
+      "progress": 100,
+      "checked_utc": "2026-11-14T20:42:59.795126+00:00",
+      "missing_layers": [],
+      "outputs_inspected_utc": "2026-11-14T20:43:18.220981+00:00"
+    },
+    "f5a3c87dfa8a5aeba5e4": {
+      "id": "1f99e0c9-065d-444d-aa3b-cc0a496310a2",
+      "date_utc": "2026-08-19",
+      "scene": "NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_X05026_N_F_J_001",
+      "layers": [
+        "HVHV",
+        "mask"
+      ],
+      "submitted_utc": "2026-11-14T20:51:31.594569+00:00",
+      "status": "running",
+      "outputs": [],
+      "progress": 9,
+      "checked_utc": "2026-11-14T20:52:14.669498+00:00"
+    }
+  },
+  "files": [
+    {
+      "file": "2026-08-19/998997b61f16d5fdeea0/465033752_NISAR_L2_PR_GCOV_028_098_A_016_4005_DHDH_A_20260819T233918_20260819T233953_X05026_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif",
+      "date_utc": "2026-08-19",
+      "job_id": "367e3565-2915-4e1f-bc43-ddbc0360c183",
+      "layer": "HHHH",
+      "requested_layers": [
+        "HHHH"
+      ],
+      "bytes": 4756194,
+      "driver": "GTiff",
+      "dtype": [
+        "float32"
+      ],
+      "crs": "EPSG:32645",
+      "epsg": 32645,
+      "transform": [
+        10.0,
+        0.0,
+        350610.0,
+        0.0,
+        -10.0,
+        3135110.0
+      ],
+      "width": 1011,
+      "height": 1009,
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bands": 1,
+      "nodata": [
+        "nan"
+      ],
+      "tiled": true,
+      "block_shapes": [
+        [
+          512,
+          512
+        ]
+      ],
+      "image_structure": {
+        "LAYOUT": "COG",
+        "COMPRESSION": "LZW",
+        "INTERLEAVE": "BAND",
+        "OVERVIEW_RESAMPLING": "CUBIC"
+      },
+      "cog_layout_declared": true,
+      "overviews": [
+        2
+      ],
+      "tags": {
+        "contact": "nisar-sds-ops@jpl.nasa.gov",
+        "Conventions": "CF-1.7",
+        "institution": "NASA JPL",
+        "mission_name": "NISAR",
+        "reference_document": "D-102274 NISAR NASA SDS Product Specification Level-2 Geocoded Polarimetric Covariance L2 GCOV",
+        "title": "NISAR L2 GCOV Product",
+        "AREA_OR_POINT": "Area"
+      },
+      "mask_flags": [
+        [
+          "nodata"
+        ]
+      ],
+      "sample_readable": true,
+      "sha256": "806a00b4c73190e5a664af08b7b3f0e847419db57546d81f87cba596f3dd3cab"
+    }
+  ],
+  "grid_checks": {},
+  "evidence": "Capacidades consultadas; extração autenticada depende desta execução.",
+  "versions": {
+    "harmony-py": "1.8.0",
+    "rasterio": "1.5.2",
+    "numpy": "2.5.4",
+    "requests": "2.34.2"
+  },
+  "capabilities_checked_utc": "2026-11-14T20:38:58.964991+00:00",
+  "scientific_service": "nasa/harmony-gdal-adapter"
+}
